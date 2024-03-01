@@ -100,6 +100,21 @@ header {
     align-items: center;
 }
 
+.header__img--wrapper {
+    padding: 20px;
+    z-index: 2;
+}
+
+.container {
+    padding: 56px 0;
+}
+
+.row {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
 h1 {
     font-size: 56px;
     color: purple;
@@ -130,19 +145,6 @@ button:active {
     border: none;
 }
 
-.header__img--wrapper {
-    padding: 20px;
-}
-
-.container {
-    padding: 56px 0;
-}
-
-.row {
-    width: 100%;
-    max-width: 1200px;
-    margin: 0 auto;
-}
 /************************************* HIGHLIGHTS ***********************************/
 
 #highlights {
@@ -161,6 +163,20 @@ button:active {
     background-size: cover;
     background-repeat: no-repeat;
     transform: translateY(-100%);
+}
+
+#highlights:after {
+    background: url("assets/wave.svg");
+    content: "";
+    position: absolute;
+    width: 101vw;
+    height: 12vw;
+    bottom: 1px;
+    left: 0;
+    z-index: 1;
+    background-size: cover;
+    background-repeat: no-repeat;
+    transform: translateY(100%);
 }
 
 .highlight__wrapper {
@@ -192,4 +208,10 @@ button:active {
 .highlight__subtitle {
     font-size: 20px;
     margin-bottom: 16px;
+}
+
+/* FEATURES */
+
+#features {
+    background-color: rgba(185, 79, 185, 0.199);
 }
