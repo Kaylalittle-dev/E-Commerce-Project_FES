@@ -6,6 +6,7 @@
     <title>E-Commerce Project</title>
     <link rel="stylesheet" href="styles.css"/>
     <script src="https://kit.fontawesome.com/0b5ae10d2b.js" crossorigin="anonymous"></script>
+    <script src="index.js"></script>
   </head>
   <body>
     
@@ -20,7 +21,28 @@
             <li><a href="#" class="nav__link nav__link--primary">Books</a></li>
           </ul>
         </div>
+            <button class="btn__menu" onclick="openMenu()">
+                <i class="fas fa-bars"></i>
+            </button>
+        <div class="menu__backdrop">
+            <button class="btn__menu btn__menu--close" onclick="closeMenu()>
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+            <ul class="menu__links">
+                <li class="menu__list">
+                    <a href="#" class="menu__link">Home</a>
+                </li>
+                <li class="menu__list">
+                    <a href="#featured" class="menu__link">Books</a>
+                </li>
+                <li class="menu__list">
+                    <a href="#" class="menu__link no-cursor">Contact</a>
+                </li>
+            </ul>
+        </div>  
       </nav>
+
+
       <header>
         <div class="header__container">
           <div class="header__description">
