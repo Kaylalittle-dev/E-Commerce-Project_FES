@@ -12,35 +12,35 @@
     
     
     <section id="landing">
-      <nav>
+    <nav>
         <div class="nav__container">
-          <img class="logo" src="assets/Library.svg" alt="library logo image" />
-          <ul class="nav__links">
-            <li><a href="#" class="nav__link">Home</a></li>
-            <li><a href="#" class="nav__link">Contact</a></li>
-            <li><a href="#" class="nav__link nav__link--primary">Books</a></li>
-          </ul>
-        </div>
+            <img class="logo" src="assets/Library.svg" alt="library logo image" />
+            <ul class="nav__links">
+                <li><a href="#" class="nav__link">Home</a></li>
+                <li><a href="#" class="nav__link">Contact</a></li>
+                <li><a href="#" class="nav__link nav__link--primary">Books</a></li>
+            </ul>
             <button class="btn__menu" onclick="openMenu()">
                 <i class="fas fa-bars"></i>
             </button>
-        <div class="menu__backdrop">
-            <button class="btn__menu btn__menu--close" onclick="closeMenu()>
-                <i class="fa-solid fa-xmark"></i>
-            </button>
-            <ul class="menu__links">
-                <li class="menu__list">
-                    <a href="#" class="menu__link">Home</a>
-                </li>
-                <li class="menu__list">
-                    <a href="#featured" class="menu__link">Books</a>
-                </li>
-                <li class="menu__list">
-                    <a href="#" class="menu__link no-cursor">Contact</a>
-                </li>
-            </ul>
-        </div>  
-      </nav>
+            <div class="menu__backdrop">
+                <button class="btn__menu btn__menu--close" onclick="closeMenu()">
+                    <i class="fa-solid fa-times"></i>
+                </button>
+                <ul class="menu__links">
+                    <li class="menu__list">
+                        <a href="#" class="menu__link" onclick="closeMenu()">Home</a>
+                    </li>
+                    <li class="menu__list">
+                        <a href="#featured" class="menu__link" onclick="closeMenu()">Books</a>
+                    </li>
+                    <li class="menu__list">
+                        <a href="#" class="menu__link no-cursor" onclick="closeMenu()">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
 
 
       <header>
@@ -50,7 +50,9 @@
             <h2>
               Find your dream book with <span class="purple">Library</span>
             </h2>
-            <button class="btn">Browse Books</button>
+            <a href="#featured">
+                <button class="btn">Browse Books</button>
+            </a>
           </div>
           <figure class="header__img--wrapper">
             <img
@@ -83,7 +85,7 @@
                 </div>
                 <div class="highlight">
                     <div class="highlight__img">
-                        <i class="fas fa-bolt"></i>
+                        <i class="fas fa-book-open"></i>
                     </div>
                     <h3 class="highlight__subtitle">
                         10,000+ Books
@@ -94,7 +96,7 @@
                 </div>
                 <div class="highlight">
                     <div class="highlight__img">
-                        <i class="fas fa-bolt"></i>
+                        <i class="fas fa-tags"></i>
                     </div>
                     <h3 class="highlight__subtitle">
                         Affordable
